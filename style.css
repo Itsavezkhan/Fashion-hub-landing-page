@@ -1,0 +1,166 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: orbitron;
+}
+.navbar-container{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list{
+    display: flex;  
+}
+.list-item{
+    margin: 0 25px;
+    list-style: none;
+    font-family: orbitron ;
+    position: relative;
+    cursor: pointer;
+
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.nav-button{
+    margin: 0 14px;
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: poppins;
+}
+
+.nav-button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.square img {
+    position: absolute;
+    width: 360px;
+    margin-top: 220px;
+    margin-left: 165px;
+}
+.hero-container>div>img{
+    position: relative;
+    width: 345px;
+    margin-left: 110px;
+    margin-top: 90px;
+}
+.hero-container-right{
+    width: 900px;
+    height: 600px;
+    margin-left: 550px;
+    margin-top: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-heading{
+    font-size: 64px;
+    font-family: orbitron;
+    margin-top: 90px;
+}
+.hero-description{
+    font-size: 20px;
+    width: 900px;
+    text-align: center;
+    margin-top: 20px;
+}
+.button-email{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 100px;
+
+}
+.button-join{
+    border-radius: 10px;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+}
+.contact-heading{
+    margin-top: 70px;
+    margin-left: 60px;
+    font-size: 19px;
+}
+.hero-container-right div button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer; 
+}
+.icons img{
+    width: 45px;
+    margin-top: 20px;
+    padding: 6px;
+    margin-left: 10px;
+}
+.list-item:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: black;
+    position: absolute;
+    transition: 0.3s;
+}
+.list-item{
+    margin: 0 25px;
+    list-style: none;
+    font-family: orbitron ;
+    position: relative;
+    cursor: pointer;
+
+}
+.list-item:hover:after{
+    width: 100%;
+}
+.globe img{
+    position: absolute;
+    width: 45px;
+    margin-left: 800px;
+    margin-top: 55px;
+}
+.star img{
+    position: absolute;
+    top: 560px;
+    left: 600px;
+    width: 45px;
+}
+.hero-container .square+span{
+    position: relative;
+    left: 730px;
+    bottom: 500px;
+}
+/* RESPONSIVE WEBSITE ATTEMPT */
+@media screen and (max-width: 768px) {
+    .square img {
+        position: absolute;
+        display: block
+        width: 96%;
+        margin-top: 2%;
+        margin-left: 25;
+    }
+    .hero-container>div>img{
+        position: relative;
+        width: 345px;
+        margin-left: 110px;
+    }
+    .hero-container-right{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
